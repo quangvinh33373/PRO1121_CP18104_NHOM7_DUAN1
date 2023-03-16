@@ -1,22 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.home.HomeFragment"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/text_home"
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginTop="5.2dp"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="#D5D4D2"
+            android:src="@drawable/baseline_search_24" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_search"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:hint="Search"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="#D5D4D2"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/img_shop"
+            android:layout_marginTop="5.2dp"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_shopping_cart_24" />
+</LinearLayout>
+
+    <LinearLayout
+        android:background="#FF9800"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_q"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/mlb_q" />
+            <Button
+                android:id="@+id/btn_quan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:text="Quần"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_ao"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/mlb_ao" />
+            <Button
+                android:id="@+id/btn_ao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:text="Áo"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/frag_ctn_sp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </androidx.fragment.app.FragmentContainerView>
+
+
+</LinearLayout>

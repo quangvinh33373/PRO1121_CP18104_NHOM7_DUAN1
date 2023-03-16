@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher_background"
+        android:id="@+id/image01"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pro"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/tv01"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$1000"
+        android:textSize="20dp"
+
+        android:textColor="#2C8E30"
+        android:layout_gravity="center"
+        android:id="@+id/tv02"/>
+
+</LinearLayout>
