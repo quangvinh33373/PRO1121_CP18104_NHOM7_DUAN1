@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "440456629426",
+    "project_id": "quanlybanquanaoluxury",
+    "storage_bucket": "quanlybanquanaoluxury.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440456629426:android:78e866d1544a50932f0dab",
+        "android_client_info": {
+          "package_name": "vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440456629426-mru89c4v9bi5b84m3s5ag16v09da6alc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEBx8p1q6-J2vLfr-Sw_K0JYXHpMRq6iU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440456629426-mru89c4v9bi5b84m3s5ag16v09da6alc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
