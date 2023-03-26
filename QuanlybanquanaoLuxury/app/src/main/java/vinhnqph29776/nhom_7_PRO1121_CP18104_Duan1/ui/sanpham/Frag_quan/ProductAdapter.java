@@ -1,4 +1,4 @@
-package vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui.home.Frag_quan;
+package vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui.sanpham.Frag_quan;
 
 import android.content.Context;
 import android.view.LayoutInflater;

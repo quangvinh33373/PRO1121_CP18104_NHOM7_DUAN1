@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui.home.HomeFragment"
+        android:name="vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui.sanpham.Fragment_sanpham"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_sanpham" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui.gallery.GalleryFragment"
+        android:name="vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui.thongbao.Fragment_thongbao"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_thongbao" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui.slideshow.SlideshowFragment"
+        android:name="vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui.taikhoan.Fragment_taikhoan"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_taikhoan" />
 </navigation>

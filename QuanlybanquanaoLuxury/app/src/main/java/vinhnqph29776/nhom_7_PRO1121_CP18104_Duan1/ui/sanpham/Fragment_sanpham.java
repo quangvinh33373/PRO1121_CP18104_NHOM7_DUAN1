@@ -1,4 +1,4 @@
-package vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui.home;
+package vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui.sanpham;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -6,34 +6,31 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.lifecycle.ViewModelProvider;
 
 import vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.R;
-import vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.databinding.FragmentHomeBinding;
-import vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui.home.Frag_quan.Frag_ao;
-import vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui.home.Frag_quan.Frag_quan;
 
-public class HomeFragment extends Fragment {
+import vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.databinding.FragmentSanphamBinding;
+import vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui.sanpham.Frag_quan.Frag_ao;
+import vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui.sanpham.Frag_quan.Frag_quan;
+
+public class Fragment_sanpham extends Fragment {
     FragmentManager fm;
     ImageView img_ao,img_quan,img_shop;
     Button btn_ao,btn_quan;
-    private FragmentHomeBinding binding;
+    private FragmentSanphamBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
 
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentSanphamBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         return root;
