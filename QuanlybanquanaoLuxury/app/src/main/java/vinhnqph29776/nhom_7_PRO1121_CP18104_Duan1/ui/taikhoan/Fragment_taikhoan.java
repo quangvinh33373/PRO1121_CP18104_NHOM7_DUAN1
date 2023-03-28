@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.R;
+import vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.databinding.FragmentSanphamBinding;
 import vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.databinding.FragmentTaikhoanBinding;
 
 public class Fragment_taikhoan extends Fragment {
@@ -17,8 +18,10 @@ public class Fragment_taikhoan extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_taikhoan,container);
-        return view;
+        binding = FragmentTaikhoanBinding.inflate(inflater, container, false);
+        View root = binding.getRoot();
+
+        return root;
     }
 
     @Override
