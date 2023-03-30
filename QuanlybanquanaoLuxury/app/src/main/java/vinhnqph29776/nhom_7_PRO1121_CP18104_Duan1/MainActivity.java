@@ -1,8 +1,10 @@
 package vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -30,7 +32,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarMain.toolbar);
-
+        SharedPreferences sharedPreferences = getSharedPreferences("savedUser", MODE_PRIVATE);
+        String username = sharedPreferences.getString("username", "");
+        if(username.equals("admin")){
+            Toast.makeText(this, "hello admin", Toast.LENGTH_SHORT).show();
+        }
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each

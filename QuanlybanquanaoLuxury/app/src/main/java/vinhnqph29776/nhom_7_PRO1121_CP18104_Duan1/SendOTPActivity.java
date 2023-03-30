@@ -1,6 +1,7 @@
 package vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,7 +30,8 @@ public class SendOTPActivity extends AppCompatActivity {
         final EditText inputMobile = findViewById(R.id.inputMobile);
         final Button buttonGetOTP = findViewById(R.id.buttonGetOTP);
         final ProgressBar progressBar = findViewById(R.id.progressBar);
-
+        SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("savedUser", MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
         buttonGetOTP.setOnClickListener(v -> {
             //toast error
             if(inputMobile.getText().toString().isEmpty()){
@@ -37,9 +39,11 @@ public class SendOTPActivity extends AppCompatActivity {
                 return;
             }
             if(inputMobile.getText().toString().equals("12345678")){
+
+                editor.putString("username", "admin");
                 Intent admin=new Intent(this,MainActivity.class);
                 startActivity(admin);
-                Toast.makeText(getApplicationContext(), "Welcome admin", Toast.LENGTH_SHORT).show();
+
             }
             //set visibility
             buttonGetOTP.setVisibility(View.INVISIBLE);
@@ -55,6 +59,7 @@ public class SendOTPActivity extends AppCompatActivity {
                             public void onVerificationCompleted(@NonNull PhoneAuthCredential phoneAuthCredential) {
                                 progressBar.setVisibility(View.GONE);
                                 buttonGetOTP.setVisibility(View.VISIBLE);
+                                editor.putString("username", "guest");
                             }
 
                             @Override
