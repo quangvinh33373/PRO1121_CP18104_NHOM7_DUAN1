@@ -6,38 +6,23 @@
     android:layout_height="match_parent">
 
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/fav_bt"
-
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="492dp"
-        android:backgroundTint="@color/white"
-        android:text="Yêu thích"
-        android:textColor="@color/text_primary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.034"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:strokeColor="@color/black"
-        app:strokeWidth="1dp"></com.google.android.material.button.MaterialButton>
-
     <ImageView
         android:id="@+id/cart_icon"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="24dp"
         android:src="@drawable/baseline_shopping_cart_24"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.903"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"></ImageView>
+
 
     <TextView
         android:id="@+id/ten_sp_tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="584dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center"
         android:text="ten sp"
@@ -46,10 +31,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"></TextView>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146"></TextView>
 
     <TextView
-        android:id="@+id/tv_tensp_"
+        android:id="@+id/tv_mota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -58,10 +45,63 @@
         android:text="mô tả sản phẩm .... "
         android:textColor="@color/text_primary"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/addtocart_bt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"></TextView>
+
+    <TextView
+        android:id="@+id/tv_plus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="+"
+        android:textColor="@color/text_primary"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772"></TextView>
+
+    <TextView
+        android:id="@+id/tv_sl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="123"
+        android:textColor="@color/text_primary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.775"></TextView>
+
+    <TextView
+
+        android:id="@+id/tv_minus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="-"
+        android:textColor="@color/text_primary"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772"></TextView>
 
     <ImageView
         android:id="@+id/img_sanpham"
@@ -69,39 +109,40 @@
         android:layout_height="200dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/nike_custom"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ten_sp_tv"></ImageView>
+        app:layout_constraintTop_toBottomOf="@+id/ten_sp_tv"
+        app:layout_constraintVertical_bias="0.0"></ImageView>
 
     <ImageView
 
         android:id="@+id/back_icon"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="656dp"
         android:src="@mipmap/ic_back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.077"
-        app:layout_constraintStart_toStartOf="parent" />
-
-
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/buy_bt"
 
         android:layout_width="80dp"
         android:layout_height="60dp"
-        android:layout_marginTop="616dp"
         android:backgroundTint="@color/white"
         android:text="MUA"
         android:textColor="@color/text_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.274"
+        app:layout_constraintHorizontal_bias="0.145"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931"
         app:strokeColor="@color/black"
         app:strokeWidth="1dp"></com.google.android.material.button.MaterialButton>
 
@@ -110,14 +151,17 @@
 
         android:layout_width="160dp"
         android:layout_height="60dp"
-        android:layout_marginTop="616dp"
         android:backgroundTint="@color/white"
         android:text="Thêm vào giỏ hàng"
         android:textColor="@color/text_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.749"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931"
         app:strokeColor="@color/black"
         app:strokeWidth="1dp"></com.google.android.material.button.MaterialButton>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
