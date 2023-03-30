@@ -103,6 +103,7 @@
         app:layout_constraintVertical_bias="0.571"></TextView>
 
     <EditText
+        android:inputType="number"
         android:id="@+id/input_giatien"
         android:layout_width="match_parent"
         android:layout_height="30dp"
@@ -118,6 +119,7 @@
         app:layout_constraintVertical_bias="0.647"></EditText>
 
     <EditText
+        android:inputType="number"
         android:id="@+id/input_kichco"
         android:layout_width="match_parent"
         android:layout_height="30dp"
