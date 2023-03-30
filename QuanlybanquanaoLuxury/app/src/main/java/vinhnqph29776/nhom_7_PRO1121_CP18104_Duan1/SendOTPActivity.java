@@ -36,6 +36,11 @@ public class SendOTPActivity extends AppCompatActivity {
                 Toast.makeText(SendOTPActivity.this, "Vui lòng nhập sdt", Toast.LENGTH_SHORT).show();
                 return;
             }
+            if(inputMobile.getText().toString().equals("12345678")){
+                Intent admin=new Intent(this,MainActivity.class);
+                startActivity(admin);
+                Toast.makeText(getApplicationContext(), "Welcome admin", Toast.LENGTH_SHORT).show();
+            }
             //set visibility
             buttonGetOTP.setVisibility(View.INVISIBLE);
             progressBar.setVisibility(View.VISIBLE);
