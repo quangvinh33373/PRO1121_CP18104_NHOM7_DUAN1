@@ -4,16 +4,7 @@ public class SanPham {
    String masp;
     String tensp,mota;
     int size;
-
-    public SanPham(String masp, String tensp, String mota, int size) {
-        this.masp = masp;
-        this.tensp = tensp;
-        this.mota = mota;
-        this.size = size;
-    }
-
-    public SanPham() {
-    }
+    int soluongsp;
 
     public String getMasp() {
         return masp;
@@ -45,5 +36,24 @@ public class SanPham {
 
     public void setSize(int size) {
         this.size = size;
+    }
+
+    public int getSoluongsp() {
+        return soluongsp;
+    }
+
+    public void setSoluongsp(int soluongsp) {
+        this.soluongsp = soluongsp;
+    }
+
+    public SanPham() {
+    }
+
+    public SanPham(String masp, String tensp, String mota, int size, int soluongsp) {
+        this.masp = masp;
+        this.tensp = tensp;
+        this.mota = mota;
+        this.size = size;
+        this.soluongsp = soluongsp;
     }
 }
