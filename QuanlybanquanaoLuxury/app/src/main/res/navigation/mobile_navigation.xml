@@ -11,15 +11,11 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_sanpham" />
 
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui.thongbao.Fragment_thongbao"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_thongbao" />
+
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui.taikhoan.Fragment_taikhoan"
+        android:name="vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui."
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_taikhoan" />
+        tools:layout="@layout/fragment_quanlysp" />
 </navigation>
