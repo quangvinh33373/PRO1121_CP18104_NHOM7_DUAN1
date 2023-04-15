@@ -1,16 +1,34 @@
 package vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.Objects;
 
-public class SanPham {
-   String masp;
-    String tensp,mota;
-    int size;
-    int soluongsp;
+import android.media.Image;
 
-    public String getMasp() {
+public class SanPham {
+   int masp;
+    String tensp,soluong;
+    String size ,money;
+    String image;
+
+
+
+
+
+    public SanPham() {
+    }
+
+
+    public SanPham( String tensp, String money, String image,String soluong,String size) {
+        this.tensp = tensp;
+        this.money = money;
+        this.image = image;
+        this.soluong=soluong;
+        this.size=size;
+    }
+
+    public int getMasp() {
         return masp;
     }
 
-    public void setMasp(String masp) {
+    public void setMasp(int masp) {
         this.masp = masp;
     }
 
@@ -22,38 +40,42 @@ public class SanPham {
         this.tensp = tensp;
     }
 
-    public String getMota() {
-        return mota;
-    }
 
-    public void setMota(String mota) {
-        this.mota = mota;
-    }
 
-    public int getSize() {
+    public String getSize() {
         return size;
     }
 
-    public void setSize(int size) {
+    public void setSize(String size) {
         this.size = size;
     }
 
-    public int getSoluongsp() {
-        return soluongsp;
+    public String getMoney() {
+        return money;
     }
 
-    public void setSoluongsp(int soluongsp) {
-        this.soluongsp = soluongsp;
+    public void setMoney(String money) {
+        this.money = money;
     }
 
-    public SanPham() {
+    public String getImage() {
+        return image;
     }
 
-    public SanPham(String masp, String tensp, String mota, int size, int soluongsp) {
-        this.masp = masp;
-        this.tensp = tensp;
-        this.mota = mota;
-        this.size = size;
-        this.soluongsp = soluongsp;
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getSoluong() {
+        return soluong;
+    }
+
+    public void setSoluong(String soluong) {
+        this.soluong = soluong;
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(masp);
     }
 }

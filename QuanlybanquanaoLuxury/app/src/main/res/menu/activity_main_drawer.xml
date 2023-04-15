@@ -10,9 +10,8 @@
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/baseline_category_24"
-            android:title="Quản lý sản phẩm" />
-
+            android:icon="@drawable/icon_notifications_active_24"
+            android:title="Quản lý hóa đơn" />
         <item
             android:id="@+id/nav_exit"
             android:icon="@drawable/icon_exit_to_app_24"

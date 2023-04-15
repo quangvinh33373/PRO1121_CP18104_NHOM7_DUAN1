@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/themsp_ao_settings"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
+        android:title="Thêm sản phẩm áo"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/themsp_quan_settings"
+        android:orderInCategory="100"
+        android:title="Thêm sản phẩm quần"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/themsp_giay_settings"
+        android:orderInCategory="100"
+        android:title="Thêm sản phẩm giày"
         app:showAsAction="never" />
 </menu>

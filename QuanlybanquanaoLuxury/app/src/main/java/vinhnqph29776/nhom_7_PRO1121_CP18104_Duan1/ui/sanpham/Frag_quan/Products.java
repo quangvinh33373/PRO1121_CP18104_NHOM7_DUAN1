@@ -4,12 +4,13 @@ public class Products {
     String name;
     double price;
     String image;
+int soluong;
 
-
-    public Products(String name, double price, String image) {
+    public Products(String name, double price, String image,int soluong) {
         this.name = name;
         this.price = price;
         this.image = image;
+       this.soluong=soluong;
     }
 
     public Products() {
@@ -33,6 +34,14 @@ public class Products {
 
     public String getImage() {
         return image;
+    }
+
+    public int getSoluong() {
+        return soluong;
+    }
+
+    public void setSoluong(int soluong) {
+        this.soluong = soluong;
     }
 
     public void setImage(String image) {

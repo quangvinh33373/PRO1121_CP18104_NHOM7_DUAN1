@@ -11,11 +11,11 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_sanpham" />
 
-
-
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui."
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_quanlysp" />
+        android:id="@+id/nav_gallery"
+        android:name="vinhnqph29776.nhom_7_PRO1121_CP18104_Duan1.ui.Quanlyhoadon.Fragment_thongbao"
+        android:label="Quản lý hóa đơn"
+        tools:layout="@layout/activity_main_hoa_don" />
+
+
 </navigation>

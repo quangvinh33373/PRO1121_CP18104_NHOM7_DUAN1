@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.Quanlyhoadon.ADD_hoaDon"
+    android:orientation="vertical">
+    <ImageView
+
+        android:id="@+id/back_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035"
+        android:layout_margin="20dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="30dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên sản phẩm :"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="56dp"
+            ></TextView>
+        <EditText
+            android:textSize="30dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="56dp"
+            android:id="@+id/ed_namehd"></EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:textSize="30dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá :"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="56dp"
+            ></TextView>
+        <EditText
+            android:inputType="number"
+            android:textSize="30dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="56dp"
+            android:id="@+id/ed_giahd"></EditText>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="30dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="số lượng mua *"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="56dp"></TextView>
+        <EditText
+            android:inputType="number"
+            android:textSize="30dp"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="10dp"
+            tools:layout_editor_absoluteY="56dp"
+            android:id="@+id/ed_slhd"></EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+    <TextView
+        android:textSize="30dp"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền  :"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="56dp"
+        ></TextView>
+    <TextView
+        android:textSize="30dp"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="56dp"
+        android:id="@+id/tong"></TextView>
+
+</LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="100dp"
+        android:id="@+id/themhd_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/white"
+        android:text="Thêm hóa đơn "
+        android:textColor="@color/text_primary"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp"></com.google.android.material.button.MaterialButton>
+
+</LinearLayout>
